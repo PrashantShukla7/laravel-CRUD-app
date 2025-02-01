@@ -6,8 +6,8 @@
    session based authentication using Laravel sanctum.
   
   ## Tech stacks
-  PHP
-  Laravel framework
-  React JS
-  Context API
+  - PHP
+  - Laravel framework
+  - React JS
+  - Context API
    
