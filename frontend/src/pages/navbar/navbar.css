@@ -1,0 +1,123 @@
+/* navbar.css */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.left-nav {
+    display: flex;
+    align-items: center;
+}
+
+.left-nav h3 a {
+    font-size: 1.5rem;
+    color: #2c3e50;
+    margin: 0;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.right-nav {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.right-nav ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    gap: 20px;
+}
+
+.right-nav ul li a {
+    text-decoration: none;
+    color: #334155;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.right-nav ul li a:hover {
+    color: #0066cc;
+}
+
+.right-nav .auth-buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.right-nav .button {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.right-nav .button:first-child {
+    background-color: #f0f4f8;
+    color: #0066cc;
+}
+
+.right-nav .button:last-child {
+    background-color: #0066cc;
+    color: white;
+}
+
+.right-nav button:hover {
+    opacity: 0.9;
+}
+
+.right-nav .profile-link {
+    display: flex;
+    align-items: center;
+}
+
+.right-nav .profile-link img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #e0e0e0;
+    transition: transform 0.3s ease;
+}
+
+.right-nav .profile-link img:hover {
+    transform: scale(1.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav {
+        padding: 15px 20px;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .right-nav {
+        width: 100%;
+        justify-content: space-between;
+        gap: 15px;
+    }
+
+    .right-nav ul {
+        gap: 15px;
+    }
+}
+
+/* Accessibility and Focus States */
+.right-nav ul li a:focus,
+.right-nav button:focus {
+    outline: 2px solid #0066cc;
+    outline-offset: 2px;
+}

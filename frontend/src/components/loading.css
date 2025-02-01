@@ -1,0 +1,11 @@
+.loading-container {
+    min-height: 75vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loading-container img {
+    width: 80px;
+    height: 80px;
+}

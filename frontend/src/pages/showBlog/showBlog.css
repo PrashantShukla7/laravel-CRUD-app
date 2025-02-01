@@ -1,0 +1,45 @@
+.blog-container {
+    padding: 2rem 20%;
+}
+
+.content {
+    background-color: rgb(252, 252, 252);
+    padding: 2rem;
+    box-shadow: inset -1px 0px 8px rgba(0, 0, 0, 0.4);
+    border-radius: 5px;
+}
+
+.blog-container .sub-heading {
+    line-height: 1.8;
+    color: rgb(70, 70, 70);
+}
+
+.blog-container .description {
+    margin-top: 1.5rem;
+    line-height: 1.6;
+    font-size: 1.2rem;
+}
+
+.action-btn {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 0.7rem;
+}
+
+.action-btn .btn {
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.action-btn .delete-btn {
+    padding: 10px 1rem;
+    background-color: #f44336;
+}
+.action-btn .edit-btn {
+    padding: 10px 1.3rem;
+    background-color: #368ff4;
+    margin-right: 15px;
+}
